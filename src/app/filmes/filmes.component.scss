@@ -1,0 +1,77 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Roboto';
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    justify-content: space-between;   
+}
+.input,
+::placeholder,
+.select{
+    width: 400px;
+    height: 58px;
+    color: #4B2142;
+}
+.botaoSalvar{
+    width: 180px;
+    height: 58px;
+    background-color: #F6511D;
+    color: white;
+    border-color: #F6511D;
+}
+.botaoSalvar:hover{
+    background-color: #41B8D2;
+    color: white;
+    border: #41B8D2;
+}
+.filmes{
+    display: flex;
+    flex-direction: column;
+}
+.filmes p{
+    width: 100%;
+}
+.filme1,
+.filme2,
+.filme3{
+    display: flex;
+    justify-content: space-between;
+    color: #4B2142;
+}
+.editar,
+.excluir{
+width: 125px;
+height: 35px;
+border-radius: 20px;
+}
+.editar{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+}
+.editar:hover{
+    background-color: #41B8D2;
+    border: #41B8D2;
+    color: black;
+}
+.excluir{
+    background-color: #41B8D2;
+    color: black;
+    border: #41B8D2;
+}
+.excluir:hover{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+}

@@ -1,0 +1,68 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Roboto';
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.botaoSalvar{
+    width: 180px;
+    height: 58px;
+    background-color: #F6511D;
+    color: white;
+    border-color: #F6511D;
+}
+form{
+    display: flex;
+    justify-content: space-between;   
+}
+.input{
+    width: 400px;
+    height: 58px;
+}
+.categorias{
+    display: flex;
+    flex-direction: column;
+}
+.categorias p{
+    width: 100%;
+}
+.categoria1,
+.categoria2,
+.categoria3{
+    display: flex;
+    justify-content: space-between;
+}
+.editar,
+.excluir{
+width: 125px;
+height: 35px;
+border-radius: 20px;
+}
+.editar{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+}
+.editar:hover{
+    background-color: #41B8D2;
+    border: #41B8D2;
+    color: black;
+}
+.excluir{
+    background-color: #41B8D2;
+    color: black;
+    border: #41B8D2;
+}
+.excluir:hover{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+}

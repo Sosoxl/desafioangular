@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Roboto';
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+#cadastro{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 320px;
+    height: 38px;
+    border: 1px solid black;
+}
+input:hover{
+    border-color: #F6511D;
+}
+.color{
+    color:#4B2142;
+}
+#botao_cadastrar{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+    width: 180px;
+    height: 58px;
+}
+#botao_cadastrar:hover{
+    background-color:#41B8D2;
+    color: black;
+}
+#usuarios{
+    display: flex;
+    flex-direction: column;
+}
+.usuario1,
+.usuario2,
+.usuario3{
+    display: flex;
+    justify-content: space-between;
+    color: #4B2142;
+}
+.editar,
+.excluir{
+width: 125px;
+height: 35px;
+border-radius: 20px;
+}
+.editar{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+}
+.editar:hover{
+    background-color: #41B8D2;
+    border: #41B8D2;
+    color: black;
+}
+.excluir{
+    background-color: #41B8D2;
+    color: black;
+    border: #41B8D2;
+}
+.excluir:hover{
+    background-color: #F6511D;
+    color: white;
+    border: #F6511D;
+}

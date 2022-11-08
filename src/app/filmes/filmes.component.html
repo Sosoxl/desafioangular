@@ -1,0 +1,73 @@
+<app-header></app-header>
+<main>
+
+    <div class="titulo">
+
+        <h2>Filmes</h2>
+        <img src="../../assets/img/cinema 1.png" alt="imagem principal" class="img">
+
+    </div>
+
+    <h2>Cadastrar Filmes</h2>
+
+    <form>
+    
+        <mat-form-field class="input" appearance="fill">
+            <mat-label>Título do filme</mat-label>
+            <input matInput placeholder="Escreva aqui">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="select">
+            <mat-label>Escolha o genero</mat-label>
+            <mat-select>
+              <mat-option>None</mat-option>
+              <mat-option value="option1">Genero</mat-option>
+              <mat-option value="option2">Genero2</mat-option>
+              <mat-option value="option3">Genero3</mat-option>
+            </mat-select>
+          </mat-form-field>
+          
+    
+
+        <button class="botaoSalvar">Salvar</button>
+        
+    </form>
+
+    <br><br>
+
+    <div class="filmes">
+
+        <div class="filme1">
+            <p>Os outros</p>
+            <p>Terror</p>
+
+            <button class="editar">Editar</button>
+            <button class="excluir">Excluir</button>
+        </div>
+
+        <br>
+        
+        <div class="filme2">
+            <p>Até o último homem</p>
+            <p>Ação</p>
+
+            <button class="editar">Editar</button>
+            <button class="excluir">Excluir</button>
+        </div>
+
+        <br>
+
+        <div class="filme3">
+            <p>O máscara</p>
+            <p>Comédia</p>
+
+            <button class="editar">Editar</button>
+            <button class="excluir">Excluir</button>
+        </div>
+
+    </div>
+
+    <br><br>
+
+</main>
+<app-footer></app-footer>

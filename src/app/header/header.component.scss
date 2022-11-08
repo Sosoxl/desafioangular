@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #9bd2de;
+    max-width: 1440px;
+}
+
+.logoheader{
+    height: 130px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoheader a{
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    color: #4B2142;
+    ;
+}
+
+p{
+    font-family: 'Roboto';
+    color: black;
+    font-size: 25px;
+}
