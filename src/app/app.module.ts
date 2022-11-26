@@ -13,6 +13,9 @@ import { FilmesComponent } from './filmes/filmes.component';
 import { GeneroComponent } from './genero/genero.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

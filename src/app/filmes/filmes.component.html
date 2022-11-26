@@ -10,14 +10,14 @@
 
     <h2>Cadastrar Filmes</h2>
 
-    <form>
+    <form [formGroup]="form" (ngNativeValidate)="salvarDadosFilmes()">
     
-        <mat-form-field class="input" appearance="fill">
+        <mat-form-field formControlName="filmes" class="input" appearance="fill">
             <mat-label>Título do filme</mat-label>
             <input matInput placeholder="Escreva aqui">
         </mat-form-field>
 
-        <mat-form-field appearance="fill" class="select">
+        <mat-form-field appearance="fill" formControlName="genero" class="select">
             <mat-label>Escolha o genero</mat-label>
             <mat-select>
               <mat-option>None</mat-option>
@@ -29,40 +29,21 @@
           
     
 
-        <button class="botaoSalvar">Salvar</button>
+          <button type="submit" class="salvar" (click)="salvarDadosFilmes()" *ngIf="!verificarEditar">Salvar</button>
+          <button type="submit" class="salvar" (click)="EditarCliente1()" *ngIf="verificarEditar">Editar</button>
         
     </form>
 
     <br><br>
 
-    <div class="filmes">
+    <div class="filmes" *ngFor="let item of filmes; index as i;">
 
         <div class="filme1">
-            <p>Os outros</p>
-            <p>Terror</p>
+            <p>{{item}}</p>
+            <p>{{item.genero}</p>
 
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-        </div>
-
-        <br>
-        
-        <div class="filme2">
-            <p>Até o último homem</p>
-            <p>Ação</p>
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-        </div>
-
-        <br>
-
-        <div class="filme3">
-            <p>O máscara</p>
-            <p>Comédia</p>
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
+            <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+            <button class="excluir" (click)="deleteDadosFilmes(item.id)">Excluir</button>
         </div>
 
     </div>

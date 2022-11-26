@@ -5,31 +5,39 @@
 
     <!-- Dados do usuario -->
 
-    <form id="cadastro">
+    <form [formGroup]="form">
 
-        <div>
+        <div id="cadastro">
 
-            <p class="color">Nome</p>
-            <input>
+            <div>
+
+                <p class="color">Nome</p>
+                <input formControlName="nome" type="text" >
+
+            </div>
+            <div>
+
+                <p class="color">E-mail</p>
+                <input formControlName="email">
+
+            </div>
+            <div>
+
+                <p class="color">Telefone</p>
+                <input formControlName="telefone">
+
+            </div>
 
         </div>
-        <div>
 
-            <p class="color">E-mail</p>
-            <input>
 
-        </div>
-        <div>
 
-            <p class="color">Telefone</p>
-            <input>
 
-        </div>
+        <br><br>
+        <button (click)="cadastrarDadosUsuario()" *ngIf="!verificarEditar" id="botao_cadastrar">Cadastrar</button>
+        <button (click)="EditarCliente1()" *ngIf="verificarEditar" id="botao_cadastrar">Editar</button>
 
     </form>
-
-    <br><br>
-    <button id="botao_cadastrar">Cadastrar</button>
 
     <br><br>
     <br><br>
@@ -37,43 +45,19 @@
     <!-- Usuarios -->
 
     <div id="usuarios">
-        
-        <div class="usuario1">
 
-            <p>Paulo André</p>
-            <p>paulo@email.com</p>
-            <p>3349 6788</p>
-             
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
+        <div *ngFor="let item of usuario; index as i;" class="usuario1">
 
-        </div>
+            <p>{{item.nome}}</p>
+            <p>{{item.email}}</p>
+            <p>{{item.telefone}}</p>
 
-        <br>
-
-        <div class="usuario2">
-
-            <p>Marcos Lucio</p>
-            <p>marcos@email.com</p>
-            <p>3349 6788</p>
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
+            <button (click)="EditarCliente2(item)" class="editar">Editar</button>
+            <br><br>
+            <button (click)="deleteDadosUsuarios(item.id)" class="excluir">Excluir</button>
 
         </div>
 
-        <br>
-
-        <div class="usuario3">
-
-            <p>Laura Port</p>
-            <p>laura@email.com</p>
-            <p>3349 6788</p>
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-            
-        </div>
 
         <br><br>
 

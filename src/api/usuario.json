@@ -1,0 +1,54 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Sophie",
+      "email": "sophie@gmail.com",
+      "telefone": "12992286470"
+    },
+    {
+      "id": 2,
+      "nome": "eeeeeeeeeee",
+      "email": "eeeeeeeeeee",
+      "telefone": "33333333"
+    }
+  ],
+  "filmes": [
+    {
+      "id": 1,
+      "filmes": "Frozen",
+      "genero": 1
+    },
+    {
+      "id": 2,
+      "filmes": "Cinderela",
+      "genero": 1
+    }
+  ],
+  "generos": [
+    {
+      "id": 1,
+      "genero": "Aventura"
+    },
+    {
+      "id": 2,
+      "genero": "sss"
+    },
+    {
+      "id": 3,
+      "genero": "eeeee"
+    },
+    {
+      "id": 4,
+      "genero": "sss"
+    },
+    {
+      "id": 5,
+      "genero": "sss"
+    },
+    {
+      "id": 6,
+      "genero": null
+    }
+  ]
+}

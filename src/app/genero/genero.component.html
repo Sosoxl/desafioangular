@@ -10,53 +10,30 @@
 
     <h2>Cadastrar Gêneros</h2>
 
-    <form>
+    <form [formGroup]="form">
 
         <mat-form-field class="input" appearance="fill">
             <mat-label>Gêneros</mat-label>
-            <input matInput placeholder="Escreva aqui">
+            <input formControlName="genero" matInput placeholder="Escreva aqui">
         </mat-form-field>
 
-        <button class="botaoSalvar">Salvar</button>
+        <button (click)="cadastrarDadosGenero()" *ngIf="!verificarEditar" class="botaoSalvar">Salvar</button>
+        <button (click)="EditarGenero()" *ngIf="verificarEditar" class="botaoSalvar">Editar</button>
 
     </form>
 
     <br><br>
 
-    <div class="categorias">
+    <div  *ngFor="let item of genero; index as i;"class="categorias">
 
-        <div class="categoria1">
+        <div  class="categoria1">
 
-            <p>Terror</p>
+            <p>{{item.genero}}</p>
 
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-
-        </div>
-
-        <br>
-
-        <div class="categoria2">
-
-            <p>Ação</p>
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
+            <button (click)="EditarCliente2(item)" class="editar">Editar</button>
+            <button (click)="deleteDadosGenero(item.id)" class="excluir">Excluir</button>
 
         </div>
-
-        <br>
-
-        <div class="categoria3">
-
-            <p>Comédia</p>
-
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
-
-        </div>
-
-        <br><br>
 
     </div>
 
